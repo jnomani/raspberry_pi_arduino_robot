@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlsFragment" >
+
+    <Button
+        android:id="@+id/leftUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/arrow_up" />
+
+    <Button
+        android:id="@+id/rightUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/rightDown"
+        android:layout_alignTop="@+id/leftUp"
+        android:text="@string/arrow_up" />
+
+    <Button
+        android:id="@+id/rightDown"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rightUp"
+        android:layout_marginRight="50dp"
+        android:text="@string/arrow_down" />
+
+    <Button
+        android:id="@+id/leftDown"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/rightDown"
+        android:layout_alignBottom="@+id/rightDown"
+        android:layout_alignLeft="@+id/leftUp"
+        android:text="@string/arrow_down" />
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leftUp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="vertical"
+        android:layout_width="match_parent" >
+
+        <EditText
+            android:id="@+id/console"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:layout_margin="2dip"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="bottom"
+            android:textSize="14sp"
+            android:paddingBottom="0dp" />
+    </TableRow>
+
+    <RadioButton
+        android:id="@+id/downLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rightDown"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:id="@+id/upLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Switch
+        android:id="@+id/hlSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/headlight" />
+
+</RelativeLayout>
