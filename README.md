@@ -1,7 +1,7 @@
 raspberry_pi_arduino_robot
 ==========================
 
-Software I used to control an Arduino powered Raspberry Pi robot. This repo Contains a Python script for serial communication through TCP/IP, Arduino code to control the board, and an Android Application to control everything.
+Software I wrote to control an Arduino powered Raspberry Pi robot. This repo Contains a Python script for serial communication through TCP/IP, Arduino code to control the board, and an Android Application to control everything.
 
 DISCLAIMER: THis project is still a work in progress and should be tested at your own risk. I am not responsible for any damaged boards or equipment. 
 
